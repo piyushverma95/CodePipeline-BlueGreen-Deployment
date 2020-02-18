@@ -28,5 +28,5 @@ phases:
 artifacts:
     files:
       - imageDetail.json
-      - appspec.yaml
+      - appspec.yml
      # - target/CodePipeline-0.0.1-SNAPSHOT.jar
