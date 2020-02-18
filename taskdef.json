@@ -14,7 +14,7 @@
 			"protocol": "tcp",
 			"containerPort": 8080
 		}],
-		"image": "<IMAGE1_NAME>", #mention IMAGE1_NAME in placeholder
+		"image": "<IMAGE1_NAME>",
 		"name": "TaskOnly-TaskDefinition"
 	}],
 	"memory": "1024",
