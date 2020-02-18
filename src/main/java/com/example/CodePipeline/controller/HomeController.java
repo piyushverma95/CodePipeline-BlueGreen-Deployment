@@ -8,7 +8,7 @@ public class HomeController {
 	
 	@GetMapping("/")
 	public String hello() {
-		return "Good Afternoon! Trying Blue-Green Deployment, Take: infinity..";
+		return "We did it";
 	}
 	
 }
