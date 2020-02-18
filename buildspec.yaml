@@ -25,10 +25,9 @@ phases:
       - echo Writing image definitions file...
       - printf '{"ImageURI":"%s"}' $REPOSITORY_URI:$IMAGE_TAG > imageDetail.json
       - cat imageDetail.json
-      - printf 'version: 0.0\nResources:\n  - TargetService:\n      Type: AWS::ECS::Service\n      Properties:\n        TaskDefinition: "%s"\n        LoadBalancerInfo:\n          ContainerName: "TaskOnly-TaskDefinition"\n          ContainerPort: 8080' $REPOSITORY_URI:$IMAGE_TAG) > appspec.yaml
-      
 artifacts:
     files:
       - imageDetail.json
       - appspec.yaml
+      - taskdef.json
      # - target/CodePipeline-0.0.1-SNAPSHOT.jar
