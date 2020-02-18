@@ -1,16 +1,34 @@
 {
-    "family": "TaskOnlyTaskDefinition",
-    "containerDefinitions": [
-        {
-            "name": "TaskOnly-TaskDefinition",
-            "image": "969829910614.dkr.ecr.us-east-2.amazonaws.com/ecs-taskonly-repo:build-57c574db-f702-457f-b7c2-d416f210d204",
-            "portMappings": [
-                {
-                    "containerPort": 8080,
-                    "hostPort": 8080
-                }
-            ],
-            ]
+  "executionRoleArn": "arn:aws:iam::969829910614:role/ecsTaskExecutionRole",
+  "containerDefinitions": [
+    {
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "TaskOnlyLogGroup",
+          "awslogs-region": "us-east-2",
+          "awslogs-stream-prefix": "TaskOnly-container/TaskOnly-TaskDefinition"
         }
-    ]
+      },
+      "portMappings": [
+        {
+          "hostPort": 8080,
+          "protocol": "tcp",
+          "containerPort": 8080
+        }
+      ],
+      "image": "969829910614.dkr.ecr.us-east-2.amazonaws.com/ecs-taskonly-repo:build-57c574db-f702-457f-b7c2-d416f210d204",
+      "name": "TaskOnly-TaskDefinition"
+    }
+  ],
+  "memory": "1024",
+  "compatibilities": [
+    "FARGATE"
+  ],
+  "family": "TaskOnlyTaskDefinition",
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "networkMode": "awsvpc",
+  "cpu": "512"
 }
