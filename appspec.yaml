@@ -6,4 +6,14 @@ Resources:
         TaskDefinition: <TASK_DEFINITION>
         LoadBalancerInfo: 
           ContainerName: "TaskOnly-TaskDefinition"
+<<<<<<< HEAD
           ContainerPort: 8080
+=======
+          ContainerPort: 8080
+# Hooks:
+#  - BeforeInstall: "LambdaFunctionToValidateBeforeInstall"
+#  - AfterInstall: "LambdaFunctionToValidateAfterTraffic"
+#  - AfterAllowTestTraffic: "LambdaFunctionToValidateAfterTestTrafficStarts"
+#  - BeforeAllowTraffic: "LambdaFunctionToValidateBeforeAllowingProductionTraffic"
+#  - AfterAllowTraffic: "LambdaFunctionToValidateAfterAllowingProductionTraffic"
+>>>>>>> 5113dcc6921d45e316f9f6d7187f080ed3de6345

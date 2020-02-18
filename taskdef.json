@@ -14,7 +14,11 @@
 			"protocol": "tcp",
 			"containerPort": 8080
 		}],
+<<<<<<< HEAD
 		"image": "<IMAGE1_NAME>", #mention IMAGE1_NAME in placeholder
+=======
+		"image": "<IMAGE1_NAME>",
+>>>>>>> 5113dcc6921d45e316f9f6d7187f080ed3de6345
 		"name": "TaskOnly-TaskDefinition"
 	}],
 	"memory": "1024",
@@ -23,4 +27,8 @@
 	"requiresCompatibilities": ["FARGATE"],
 	"networkMode": "awsvpc",
 	"cpu": "512"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 5113dcc6921d45e316f9f6d7187f080ed3de6345
