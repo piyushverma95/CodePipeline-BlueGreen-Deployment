@@ -1,0 +1,16 @@
+{
+    "family": "TaskOnlyTaskDefinition",
+    "containerDefinitions": [
+        {
+            "name": "TaskOnly-TaskDefinition",
+            "image": "969829910614.dkr.ecr.us-east-2.amazonaws.com/ecs-taskonly-repo:build-57c574db-f702-457f-b7c2-d416f210d204",
+            "portMappings": [
+                {
+                    "containerPort": 8080,
+                    "hostPort": 8080
+                }
+            ],
+            ]
+        }
+    ]
+}
