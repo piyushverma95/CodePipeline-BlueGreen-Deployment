@@ -31,8 +31,4 @@ artifacts:
       - appspec.yaml
       - taskdef.json
      # - target/CodePipeline-0.0.1-SNAPSHOT.jar
-<<<<<<< HEAD
-      
       # https://docs.aws.amazon.com/AmazonECS/latest/userguide/ecs-cd-pipeline.html
-=======
->>>>>>> 5113dcc6921d45e316f9f6d7187f080ed3de6345
