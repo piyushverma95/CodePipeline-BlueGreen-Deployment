@@ -4,9 +4,9 @@
 		"logConfiguration": {
 			"logDriver": "awslogs",
 			"options": {
-				"awslogs-group": "TaskOnlyLogGroup",
+				"awslogs-group": "EcsLogGroup",
 				"awslogs-region": "us-east-2",
-				"awslogs-stream-prefix": "TaskOnly-container/TaskOnly-TaskDefinition"
+				"awslogs-stream-prefix": "SpringAppContainer"
 			}
 		},
 		"portMappings": [{
@@ -15,11 +15,11 @@
 			"containerPort": 8080
 		}],
 		"image": "<IMAGE1_NAME>",
-		"name": "TaskOnly-TaskDefinition"
+		"name": "SpringAppContainer"
 	}],
 	"memory": "1024",
 	"compatibilities": ["FARGATE"],
-	"family": "TaskOnlyTaskDefinition",
+	"family": "EcsTaskDefinition",
 	"requiresCompatibilities": ["FARGATE"],
 	"networkMode": "awsvpc",
 	"cpu": "512"
