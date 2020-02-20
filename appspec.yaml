@@ -5,7 +5,7 @@ Resources:
       Properties:
         TaskDefinition: <TASK_DEFINITION>
         LoadBalancerInfo: 
-          ContainerName: "TaskOnly-TaskDefinition"
+          ContainerName: "SpringAppContainer"
           ContainerPort: 8080
 
 # Hooks:
